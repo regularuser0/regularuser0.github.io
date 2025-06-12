@@ -1,0 +1,66 @@
+/* Styles généraux */
+@font-face {
+    font-family: 'Cozette';
+    src: url('CozetteVector.ttf') format('truetype');
+}
+body {
+    font-family: Cozette;
+    background-color: rgb(255, 238, 226);
+
+    width:auto;
+    margin:0;
+
+    overflow: hidden;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.topy{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.box{
+    padding: 10px;
+    margin: 40px 40px;
+    flex-grow: 1;
+    box-shadow: rgb(0, 0, 0) 9px 9px 0px 0px;    
+    border-radius: 9px;
+    border: 2.5px solid rgb(0, 0, 0);
+}
+.lain{
+    max-width: 29%;
+    object-fit: cover;
+    width:auto;
+    padding:0;
+}
+.line{
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+h1, h2, a{
+    font-size: 20px;
+    margin: 0 3px;
+    color: #3F2A0E;
+    text-decoration-line: none;
+}
+.screenshots{
+    padding: 0;
+    overflow: hidden;
+    height:432px;
+    width:768px;
+    scroll-behavior: smooth;
+}
+.screenshots img{
+    max-width: 100%;
+    height: auto;
+}
+a:hover{
+    font-weight: bold;
+}
