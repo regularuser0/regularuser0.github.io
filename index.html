@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Regularuser0</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/favicon.svg" />
-    <script src="script/type.js"></script>
-  </head>
-  <body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Love You</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="topy">
-      <img src="assets/lain.gif" class="box lain">
-      <div class="box">
+<div id="ui"></div>
 
-	<div class="line">
-	  <h2>~/Pictures/Screenshots ></h2><h1 id="ls"></h1>
-	</div>
+<script>
+const ui = document.getElementById("ui");
+const text = "Bonne fête ";
 
-	<div class="line">
-	  <a href="#scroll1">screenshot1</a>
-	  <a href="#scroll2">screenshot2</a>
-	  <a href="#scroll3">screenshot3</a>
-	  <a href="#scroll4">screenshot4</a>
-	  <a href="#scroll5">screenshot5</a>
-	</div>
-	<div class="line">
-	  <h2>~/Pictures/Screenshots ></h2><h1 id="feh"></h1>
-	</div>
-      </div>
-    </div>
-    
-    <div class="box screenshots">
-      <img src="assets/pictures/s1.png" id="scroll1">
-      <img src="assets/pictures/s2.png" id="scroll2">
-      <img src="assets/pictures/s3.png" id="scroll3">
-      <img src="assets/pictures/s4.png" id="scroll4">
-      <img src="assets/pictures/s5.png" id="scroll5">
-    </div>
+for (let i = 0; i < 120; i++) {
+  const span = document.createElement("span");
+  span.className = "love_word love_horizontal";
+  span.innerText = text;
+  span.style.setProperty("--i", i);
 
+  // cœur paramétrique
+  const t = i / 120 * Math.PI * 2;
+  const x = 16 * Math.pow(Math.sin(t), 3);
+  const y = -(13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t));
 
-    
-  </body>  
+  span.style.left = `calc(50% + ${x * 10}px)`;
+  span.style.top = `calc(50% + ${y * 10}px)`;
+
+  ui.appendChild(span);
+}
+</script>
+
+</body>
 </html>
