@@ -21,7 +21,7 @@ body {
 .love_word {
   position: absolute;
   color: #ea80b0;
-  font-size: 1.4rem;
+  font-size: 0.5rem;
   transform: translateY(-100%) rotateZ(-30deg);
   text-shadow:
     0 0 4px #fff,
@@ -69,7 +69,7 @@ body {
 
 .love_word:nth-child(4n) {
   color: #ffc1dc;
-  font-size: 1.28rem;
+  font-size: 0.45rem;
   text-shadow:
     0 0 3px #fff,
     0 0 8px #fff,
@@ -87,7 +87,7 @@ body {
 
 .love_word:nth-child(5n) {
   color: #ffd7ea;
-  font-size: 1.18rem;
+  font-size: 0.6rem;
   opacity: 0.78;
   animation-name:
     horizontalWide,
@@ -101,7 +101,7 @@ body {
 
 .love_word:nth-child(7n) {
   color: #ffffff;
-  font-size: 1.08rem;
+  font-size: 0.8rem;
   letter-spacing: 4px;
   opacity: 0.62;
   filter: blur(0.4px) saturate(1.4);
@@ -117,7 +117,7 @@ body {
 
 .love_word:nth-child(9n) {
   color: #ff7fb5;
-  font-size: 1.52rem;
+  font-size: 0.35rem;
   animation-duration:
     12000ms,
     3200ms,
